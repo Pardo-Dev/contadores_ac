@@ -1,1 +1,46 @@
-<p>navbar works!</p>
+<nav class="fixed top-0 left-0 w-full bg-emerald-500 shadow-lg z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-white text-2xl font-bold">
+        <a routerLink="/">Contadores AC</a>
+      </div>
+  
+      <!-- Links de Navegación -->
+      <ul class="hidden md:flex space-x-8 text-white">
+        <li>
+          <a routerLink="/" routerLinkActive="font-bold" class="hover:text-blue-400">Inicio</a>
+        </li>
+        <li>
+          <a routerLink="/about" routerLinkActive="font-bold" class="hover:text-blue-400">Sobre Nosotros</a>
+        </li>
+        <li>
+          <a routerLink="/services" routerLinkActive="font-bold" class="hover:text-blue-400">Servicios</a>
+        </li>
+        <li>
+          <a routerLink="/contact" routerLinkActive="font-bold" class="hover:text-blue-400">Contacto</a>
+        </li>
+        <li>
+          <a routerLink="/courses" routerLinkActive="font-bold" class="hover:text-blue-400">Cursos</a>
+        </li>
+      </ul>
+  
+      <!-- Menú de Hamburguesa (para móviles) -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  
+    <!-- Menú desplegable (para móviles) -->
+    <ul id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white space-y-4 p-4">
+      <li><a routerLink="/" class="block hover:text-blue-400">Inicio</a></li>
+      <li><a routerLink="/about" class="block hover:text-blue-400">Sobre Nosotros</a></li>
+      <li><a routerLink="/services" class="block hover:text-blue-400">Servicios</a></li>
+      <li><a routerLink="/contact" class="block hover:text-blue-400">Contacto</a></li>
+      <li><a routerLink="/courses" class="block hover:text-blue-400">Cursos</a></li>
+    </ul>
+  </nav>
+  
